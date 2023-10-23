@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>b0a04gl</title>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script type="text/javascript">
+        function sendEmail(name, email, subject, message) {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "balaji.foo404@gmail.com",
+                Password: "typ0err0r",
+                To: 'balaji.foo404@gmail.com',
+                From: email,
+                Subject: subject,
+                Body: message,
+            })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Balaji Arumugam b0a04gl" name="keywords">
+    <meta content="Balaji Arumugam b0a04gl" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">@b0a04gl</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                    <a href="#resume" class="nav-item nav-link">Resume</a>
+                    <a href="#blog" class="nav-item nav-link">Blogs</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p>I'm</p>
+                            <h1>Balaji Arumugam</h1>
+                            <h2></h2>
+                            <div class="typed-text">coding conundrum crusader</div>
+                        </div>
+                        <div class="hero-btn"><a class="btn" href="#about">MORE ABOUT ME</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero-image">
+                        <img src="img/STK-20231023-WA0000.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+<!-- About Start -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="about-content">
+                    <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                        <h2>About me</h2>
+                    </div>
+                    
+                    <p>I'm a skilled software engineer with expertise in cutting-edge technologies. Here are some of my skills:</p>
+                    <div class="row skills">
+                        <div class="col-md-6">
+                            <div class="skill">
+                                <h3>Programming languages</h3>
+                                <p>Java, Go, Python, Scala.</p>
+                            </div>
+                            <div class="skill">
+                                <h3>Framework</h3>
+                                <p>Spring boot, Reactive programming, Spring AOP.</p>
+                            </div>
+                            <div class="skill">
+                                <h3>Datastores</h3>
+                                <p>Azure (Cosmos, Databricks, SQL), PostgreSQL, Google BigQuery.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill">
+                                <h3>Messaging tools</h3>
+                                <p>Kafka, Pub-Sub, Event Hub.</p>
+                            </div>
+                            <div class="skill">
+                                <h3>Cloud platforms</h3>
+                                <p>Google Cloud, Azure.</p>
+                            </div>
+                            <div class="skill">
+                                <h3>API standards</h3>
+                                <p>REST, gRPC.</p>
+                            </div>
+                            <div class="skill">
+                                <h3>Version control</h3>
+                                <p>Git.</p>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-img">
+                    <img src="img/about.png" alt="Image" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- About End -->
+
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+        <div class="container">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Timeline</p>
+                <h2>Working Experience</h2>
+            </header>
+            <div class="timeline">
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">May'2019 - June'2019</div>
+                        <h2>Research Intern</h2>
+                        <h4>Department of IST(AU), Chennai , IN</h4>
+                        <p>
+                            Worked in the "Unmanned Autonomous Vehicle(UAV)" project team and developed the "Detection
+                            of Traffic lights and signals mechanism" which takes input in forms of both static photos
+                            and live video clips.Finally the module was deployed in hardware RC car.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">May'2020 - July'2020</div>
+                        <h2>SDE Intern</h2>
+                        <h4>Samsung R&D Institute, Bangalore , IN</h4>
+                        <p>
+                            Worked in IoT App and Plugins team and developed an "Experimental Mobile application,
+                            Controller for all Bluetooth supported Devices" which got great impact as it is of realtime
+                            use.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">July'2020 - October'2020</div>
+                        <h2>SDE Intern</h2>
+                        <h4>Infotix Techno Solutions, Chennai , IN</h4>
+                        <p>
+                            Worked in Cognitive App Development team and developed an "Conglomerate Mobile application,
+                            allows customers to search for properties based on filters. Renters to post for property.
+                            Admins to verify properties and profiles."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">March'2021 - Present </div>
+                        <h2>Software Engineer III</h2>
+                        <h4>Walmart Global Tech India, IN</h4>
+                        <p>
+                            Working with NextGen Inventory Management system team of www.samsclub.com whom 
+                            we're responsible for smooth transactional handling of supply and demand as part of order life cycle.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Job Experience End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Portfolio</p>
+                <h2>My Fanatics & Proofs</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-1">modern-day-systems</li>
+                        <li data-filter=".filter-2">research</li>
+                        <li data-filter=".filter-3  ">experiments</li>
+                        <li data-filter=".filter-4">apps</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio1.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Emoji Rover - RedisCovery</h3>
+                            <a class="btn" href="https://github.com/balaji6666/emoji-rover">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio1.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>SQL Query builder</h3>
+                            <a class="btn" href="https://github.com/balaji6666/query-builder-go">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio1.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Cipher master</h3>
+                            <a class="btn" href="https://github.com/balaji6666/cipher-master">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio1.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Realtime Chat Space</h3>
+                            <a class="btn" href="https://github.com/balaji6666/realtime-chat-space">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio2.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Goal-Oriented-Image-captioning</h3>
+                            <a class="btn" href="https://github.com/balaji6666/Goal-Oriented-Image-captioning">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio2.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>House Rentals</h3>
+                            <a class="btn" href="https://github.com/balaji6666/Housing">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio3.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>PDF Generator tool</h3>
+                            <a class="btn" href="https://github.com/balaji6666/PDF-Generator">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio4.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>E-commerce App</h3>
+                            <a class="btn" href="https://github.com/balaji6666/E-Commerce-Application">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio5.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Anomalous Log Analysis</h3>
+                            <a class="btn" href="https://github.com/balaji6666/Log-Analysis">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio6.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Live Location Tracking</h3>
+                            <a class="btn" href="https://github.com/balaji6666/Realtime-location-tracker">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio7.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Bluetooth Controller App</h3>
+                            <a class="btn" href="https://github.com/balaji6666/Unplugged-Controller">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio8.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Tamil Handwritten OCR</h3>
+                            <a class="btn" href="https://github.com/balaji6666/Tamil-handwritten-OCR">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio9.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>OTP Authentication Plugin</h3>
+                            <a class="btn" href="https://github.com/balaji6666/OTP-Auth">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio9.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Kafka-Internals</h3>
+                            <a class="btn" href="https://github.com/balaji6666/kafka-internals">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio9.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Java-Internals</h3>
+                            <a class="btn" href="https://github.com/balaji6666/java-internals">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Banner Start -->
+    <div class="banner wow zoomIn" id="resume" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Resume</p>
+                <h2>Get Full Details</h2>
+            </div>
+            <div class="container banner-text">
+            
+                <a class="btn" href="balaji-resume.pdf" download="Balaji_Resume">Download Now</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blog Start -->
+    <div class="blog" id="blog">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>From Blog</p>
+                <h2>Latest Articles</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-img">
+                            <img src="img/blog11.png" alt="Blog">
+                        </div>
+                        <div class="blog-text">
+                            <h2>
+                                Self-Learning and Self-Organizing Log Files by Generating Recursive Associations
+                            </h2>
+                            <div class="blog-meta">
+                                <p><i class="far fa-user"></i>Balaji</p>
+                                <p><i class="far fa-list-alt"></i>Research Paper</p>
+                                <p><i class="far fa-calendar-alt"></i>23-March-2021</p>
+                            </div>
+                            <p>
+                                In this work, we have proposed a level-based categorizer by applying self-learning techniques to process the log data by parsing, preprocessing the initial data, and categorizing the logs to ease the monitoring process. The features are extracted and the model is trained such that the model can be used for learning dynamically and determining the events that trigger the consecutive log generation. 
+                            </p>
+                            <a class="btn" href="https://link.springer.com/chapter/10.1007/978-981-15-5788-0_42">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-img">
+                            <img src="img/blog12.jpeg" alt="Blog">
+                        </div>
+                        <div class="blog-text">
+                            <h2>Why Choose gRPC? Because It's the Cool Kid in the API Block!</h2>
+                            <div class="blog-meta">
+                                <p><i class="far fa-user"></i>Balaji</p>
+                                <p><i class="far fa-list-alt"></i>Technical Blog</p>
+                                <p><i class="far fa-calendar-alt"></i>23-Oct-2023</p>
+                            </div>
+                            <p>
+                                We've all been cozy with REST for a while, but what if I told you there's a fresh and exciting contender in town. Enter gRPC, your one-stop-shop for API communication standards that are as cool as they are efficient. In this article, we’re going to explore the world of gRPC with a sprinkle of humor while highlighting why it’s become the new favorite. 🚀👀
+                            </p>
+                            <a class="btn" href="https://medium.com/p/f13a5fd96198">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Blog End -->
+
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                        required="required"
+                                        data-validation-required-message="Please enter your email" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                        required="required" data-validation-required-message="Please enter a subject" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control" id="message" placeholder="Message"
+                                        required="required"
+                                        data-validation-required-message="Please enter your message"></textarea>
+                                    <p class="help-block"></p>
+                                </div>
+                                <div>
+                                    <button class="btn" type="submit" id="sendMessageButton"><a
+                                            href="mailto: balaji.foo404@gmail.com">Send Message</a></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Balaji Arumugam</h2>
+                    <h3>Greater Bangalore Area, India</h3>
+                    <div class="footer-menu">
+                        <p>+91 8056441286</p>
+                        <p>baaalaji.arumugam@gmail.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://mobile.twitter.com/BalajiA94580264"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/balaji6666"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.instagram.com/_.foo.bar._/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/balaji404/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">Balaji Arumugam</a>, All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
