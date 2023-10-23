@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 21
       - run: npm install -g surge
-      - run: surge ./ https://b0a04gl.surge.sh/ --token bdddc209cc9a9f3ff54826d8e0625c57
+      - run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
