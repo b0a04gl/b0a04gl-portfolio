@@ -3,27 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>b0a04gl</title>
+    <title>@b0a04gl</title>
 
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
+<script type="text/javascript">
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
 
-    <script type="text/javascript">
-        function sendEmail(name, email, subject, message) {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "balaji.foo404@gmail.com",
-                Password: "typ0err0r",
-                To: 'balaji.foo404@gmail.com',
-                From: email,
-                Subject: subject,
-                Body: message,
-            })
-                .then(function (message) {
-                    alert("mail sent successfully")
-                });
-        }
-    </script>
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "baaalaji.arumugam@gmail.com",
+            Password : "B7A855EE2DB79A11F5B26CCBC9A633211F81",
+            To: 'baaalaji.arumugam@gmail.com',
+            From: email,
+            Subject: subject,
+            Body: "Name: " + name + "<br>Email: " + email + "<br>Message: " + message,
+        }).then(function (message) {
+            alert("Mail sent successfully");
+        });
+    }
+</script>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Balaji Arumugam b0a04gl" name="keywords">
@@ -46,7 +51,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="img/rocket.png">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -64,7 +69,7 @@
                     <a href="#about" class="nav-item nav-link">About</a>
                     <a href="#experience" class="nav-item nav-link">Experience</a>
                     <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                    <a href="#resume" class="nav-item nav-link">Resume</a>
+                    <!-- <a href="#resume" class="nav-item nav-link">Resume</a> -->
                     <a href="#blog" class="nav-item nav-link">Blogs</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
@@ -88,6 +93,7 @@
                         </div>
                         <div class="hero-btn"><a class="btn" href="#about">MORE ABOUT ME</a></div>
                     </div>
+                
                 </div>
                 <div class="col-sm-12 col-md-6 d-none d-md-block">
                     <div class="hero-image">
@@ -203,7 +209,7 @@
                     </div>
                 </div>
                 
-                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
                         <div class="timeline-date">March'2021 - Present </div>
                         <h2>Software Engineer III</h2>
@@ -244,7 +250,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio1.png" alt="Image">
+                            <img src="img/emoji_rover.jpeg" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>Emoji Rover - RedisCovery</h3>
@@ -255,7 +261,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio1.png" alt="Image">
+                            <img src="img/query_builder.jpg" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>SQL Query builder</h3>
@@ -266,7 +272,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio1.png" alt="Image">
+                            <img src="img/cipher_master.jpg" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>Cipher master</h3>
@@ -277,7 +283,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio1.png" alt="Image">
+                            <img src="img/chatbot.jpg" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>Realtime Chat Space</h3>
@@ -291,7 +297,7 @@
                             <img src="img/portfolio2.png" alt="Image">
                         </div>
                         <div class="portfolio-text">
-                            <h3>Goal-Oriented-Image-captioning</h3>
+                            <h3>Blind-Image-captioning</h3>
                             <a class="btn" href="https://github.com/balaji6666/Goal-Oriented-Image-captioning">+</a>
                         </div>
                     </div>
@@ -299,7 +305,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio2.png" alt="Image">
+                            <img src="img/portfolio1.png" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>House Rentals</h3>
@@ -382,7 +388,7 @@
                             <img src="img/portfolio9.png" alt="Image">
                         </div>
                         <div class="portfolio-text">
-                            <h3>OTP Authentication Plugin</h3>
+                            <h3>OTP Auth Plugin</h3>
                             <a class="btn" href="https://github.com/balaji6666/OTP-Auth">+</a>
                         </div>
                     </div>
@@ -391,7 +397,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio9.png" alt="Image">
+                            <img src="img/kafka_internals.webp" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>Kafka-Internals</h3>
@@ -402,7 +408,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-img">
-                            <img src="img/portfolio9.png" alt="Image">
+                            <img src="img/Java_(1).png" alt="Image">
                         </div>
                         <div class="portfolio-text">
                             <h3>Java-Internals</h3>
@@ -417,7 +423,7 @@
 
 
     <!-- Banner Start -->
-    <div class="banner wow zoomIn" id="resume" data-wow-delay="0.1s">
+    <!-- <div class="banner wow zoomIn" id="resume" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-header text-center">
                 <p>Resume</p>
@@ -429,7 +435,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Blog Start -->
@@ -474,7 +480,7 @@
                                 <p><i class="far fa-calendar-alt"></i>23-Oct-2023</p>
                             </div>
                             <p>
-                                We've all been cozy with REST for a while, but what if I told you there's a fresh and exciting contender in town. Enter gRPC, your one-stop-shop for API communication standards that are as cool as they are efficient. In this article, we’re going to explore the world of gRPC with a sprinkle of humor while highlighting why it’s become the new favorite. 🚀👀
+                                We've all been cozy with REST for a while, but what if I told you there's a fresh and exciting contender in town. Enter gRPC, your one-stop-shop for API communication standards that are as cool as they are efficient. In this article, we’re going to explore the world of gRPC with a sprinkle of humor while highlighting why it’s become the new favorite. +👀
                             </p>
                             <a class="btn" href="https://medium.com/p/f13a5fd96198">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
@@ -494,32 +500,25 @@
                     <div class="col-md-8">
                         <div class="contact-form">
                             <div id="success"></div>
-                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate" onsubmit="sendEmail(event)">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                        required="required"
-                                        data-validation-required-message="Please enter your email" />
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                        required="required" data-validation-required-message="Please enter a subject" />
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" id="message" placeholder="Message"
-                                        required="required"
-                                        data-validation-required-message="Please enter your message"></textarea>
+                                    <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                                     <p class="help-block"></p>
                                 </div>
                                 <div>
-                                    <button class="btn" type="submit" id="sendMessageButton"><a
-                                            href="mailto: balaji.foo404@gmail.com">Send Message</a></button>
+                                    <button class="btn" type="submit">Send Message</button>
                                 </div>
                             </form>
                         </div>
@@ -545,10 +544,10 @@
                         <p>baaalaji.arumugam@gmail.com</p>
                     </div>
                     <div class="footer-social">
+                        <a href="https://gecgithub01.walmart.com/b0a04gl?tab=repositories"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/baaalaji/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://medium.com/@baaalaji.arumugam"><i class="fab fa-medium"></i></a>
                         <a href="https://mobile.twitter.com/BalajiA94580264"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/balaji6666"><i class="fab fa-github-square"></i></a>
-                        <a href="https://www.instagram.com/_.foo.bar._/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/balaji404/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
